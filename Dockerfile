@@ -7,6 +7,9 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy our index.html into the web root
 COPY index.html /usr/share/nginx/html/index.html
 
+# Copy custom nginx site config
+COPY default.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80
 EXPOSE 80
 
