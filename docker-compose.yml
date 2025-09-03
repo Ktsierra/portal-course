@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  portal:
+    build: .
+    image: company-portal:latest
+    container_name: company-portal
+    ports:
+      - "8080:80"
+    restart: unless-stopped
