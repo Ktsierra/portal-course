@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Intune Company Portal — Simple Guide for Users</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#0ea5e9;
+      --text:#e6eef6;
+      --muted:#9fb4c8;
+    }
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071126 0%, #0f1724 100%);color:var(--text)}
+    .wrap{max-width:1100px;margin:30px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{
+      width:88px;height:88px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#032027;font-size:28px;box-shadow:0 6px 20px rgba(2,6,23,.6)
+    }
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 22px}
+    .slides{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+    .slide{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      border-radius:12px;padding:20px;min-height:260px;box-shadow:0 6px 24px rgba(2,6,23,0.6)
+    }
+    .big{font-size:20px;font-weight:700;margin:6px 0}
+    .step{display:flex;gap:12px;align-items:flex-start;margin:10px 0}
+    .bubble{width:52px;height:52px;border-radius:10px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-size:22px}
+    ol{padding-left:18px;margin:6px 0;color:var(--muted)}
+    .note{background:rgba(14,165,233,0.06);border-left:4px solid var(--accent);padding:10px;border-radius:6px;color:var(--text);margin-top:12px}
+    .btn{display:inline-block;background:var(--accent);color:#012b32;padding:10px 14px;border-radius:8px;font-weight:700;margin-top:10px;text-decoration:none}
+    .muted{color:var(--muted);font-size:14px}
+    .example{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:10px;color:var(--muted);font-weight:600}
+    footer{color:var(--muted);font-size:13px;margin-top:18px;text-align:center}
+    /* Responsive big text for presentation mode */
+    @media (max-width:720px){
+      .wrap{padding:12px}
+      .slides{grid-template-columns:1fr}
+      h1{font-size:22px}
+      .logo{width:74px;height:74px;font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">CP</div>
+      <div>
+        <h1>Intune Company Portal — Very Simple Guide</h1>
+        <p class="lead">A gentle, step-by-step presentation for end users. Everything spelled out clearly.</p>
+      </div>
+    </header>
+
+    <div class="slides">
+
+      <!-- Slide: Why -->
+      <section class="slide" aria-label="Why use Company Portal">
+        <div class="big">Why use Company Portal? (Short and simple)</div>
+        <div class="muted">
+          - It lets you get work apps easily.<br>
+          - It keeps your computer and data safe.<br>
+          - It helps IT push updates and fix problems faster.
+        </div>
+
+        <div class="note">
+          Tip: Think of Company Portal like the "company's app store" for work stuff.
+        </div>
+      </section>
+
+      <!-- Slide: Find Company Portal -->
+      <section class="slide" aria-label="Find Company Portal">
+        <div class="big">Step A — Find the Company Portal</div>
+
+        <div class="step">
+          <div class="bubble">1</div>
+          <div>
+            Click the Windows Start button (the button at the bottom-left of the screen). If you are on Windows: it's a little window icon.
+            <div class="example">Example: Click the Start icon or press the Windows key on your keyboard.</div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="bubble">2</div>
+          <div>
+            In Start, type: <strong>Company Portal</strong> (or just type <strong>company</strong>).
+            <div class="example">You will see "Company Portal" or "Intune Company Portal" in the search results.</div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="bubble">3</div>
+          <div>
+            Click the app named <strong>Company Portal</strong> (icon looks like a suitcase/briefcase or a shield).
+            <div class="example">If you can't find it, look for the word "Intune" near its name.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide: Pin to Taskbar / Start -->
+      <section class="slide" aria-label="Pin to taskbar or Start">
+        <div class="big">Step B — Make it easy to open (Pin it)</div>
+
+        <div class="step">
+          <div class="bubble">1</div>
+          <div>
+            Right-click the Company Portal in the Start search results.
+            <div class="example">If you have a touch screen, press and hold until the menu appears.</div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="bubble">2</div>
+          <div>
+            Choose one of these:
+            <ol>
+              <li><strong>Pin to taskbar</strong> — puts the app at the bottom of your screen so you can open it with one click.</li>
+              <li><strong>Pin to Start</strong> — places a tile in the Start menu for quick access.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="note">
+          If you do not see "Pin to taskbar", hover over "More" then choose "Pin to taskbar".
+        </div>
+      </section>
+
+      <!-- Slide: Open and Browse Apps -->
+      <section class="slide" aria-label="Install apps">
+        <div class="big">Step C — Open Company Portal and install an app</div>
+
+        <div class="step">
+          <div class="bubble">1</div>
+          <div>
+            Open the Company Portal app (click the icon you pinned, or open from Start).
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="bubble">2</div>
+          <div>
+            Look for a menu or a tab called <strong>Apps</strong> or <strong>Available apps</strong>. This is the place with apps your company allows you to install.
+            <div class="example">Sometimes there is a big button saying "Apps" — click it.</div>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="bubble">3</div>
+          <div>
+            Find the app you want. You can:
+            <ol>
+              <li>Scroll through the list.</li>
+              <li>Or use the search box and type the app name.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="bubble">4</div>
+          <div>
+            Click the app to open its details page. Then click <strong>Install</strong> or <strong>Get</strong>.
+            <div class="example">The button might say "Install", "Get", or "Request" (if your company requires approval).</div>
+          </div>
+        </div>
+
+        <div class="note">
+          After clicking Install, wait — installation runs in the background. You can keep working. When it's done, the app may appear in your Start menu.
+        </div>
+      </section>
+
+      <!-- Slide: Read App Description -->
+      <section class="slide" aria-label="Read app description">
+        <div class="big">Step D — Read the app details (what you should check)</div>
+
+        <ol>
+          <li><strong>Description:</strong> what the app does in short sentences.</li>
+          <li><strong>Publisher:</strong> the company who made the app (e.g., Microsoft, Adobe).</li>
+          <li><strong>Permissions:</strong> what the app needs to do (like access files). If it asks for a lot, ask IT.</li>
+          <li><strong>Install size and version:</strong> shows how big the app is and which version it is.</li>
+        </ol>
+
+        <div class="note">
+          If you're unsure, read the description slowly. Ask a friendly IT person: "What does this app do?" — it's okay to ask.
+        </div>
+      </section>
+
+      <!-- Slide: Troubleshooting & Tips -->
+      <section class="slide" aria-label="Troubleshooting">
+        <div class="big">If something doesn't work — quick help</div>
+
+        <div class="muted">
+          - App not in list? Search again, then ask IT if you can't find it.<br>
+          - Install button is "Request"? That means IT needs to approve — wait a little or contact IT.<br>
+          - Installation failed? Try restarting your computer, then try again.<br>
+          - Company Portal not installed? You might need to contact your IT help desk.
+        </div>
+
+        <div class="note">
+          Keep calm. Most problems have simple fixes. Take a screenshot and send it to IT if you can't solve it.
+        </div>
+      </section>
+
+      <!-- Slide: Privacy & Safety -->
+      <section class="slide" aria-label="Privacy and safety">
+        <div class="big">What about privacy?</div>
+        <div class="muted">
+          - The Company Portal can help protect company data on your device.<br>
+          - IT can manage work apps and settings, but they do not read your personal files or messages.
+        </div>
+
+        <div class="note">
+          If you have personal files, keep them in separate folders (like Documents) and do not mix with work resources.
+        </div>
+      </section>
+
+      <!-- Slide: Wrap-up -->
+      <section class="slide" aria-label="Wrap up">
+        <div class="big">Wrap-up — Quick checklist before you go</div>
+        <ol>
+          <li>Find Company Portal via Start (type "Company Portal").</li>
+          <li>Pin it to the taskbar for easy one-click access.</li>
+          <li>Open it, go to Apps, find the app, click Install.</li>
+          <li>Read app details and check permissions if unsure.</li>
+          <li>Contact IT if something needs approval or fails to install.</li>
+        </ol>
+
+        <a class="btn" href="#" onclick="alert('Save this file as index.html and open it with your browser')">Save & Use this Guide</a>
+      </section>
+
+    </div>
+
+    <footer>
+      Slide deck: Simple guide to using Intune Company Portal • Designed for conference presentation — large text and clear steps.
+    </footer>
+  </div>
+</body>
+</html>
